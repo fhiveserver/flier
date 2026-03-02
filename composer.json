@@ -1,0 +1,34 @@
+{
+    "name": "fhive/flier",
+    "description": "Decoupled FHIR search pre-indexing and query ORM for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.5",
+        "illuminate/support": "^12.0",
+        "illuminate/database": "^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.0",
+        "pestphp/pest": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "FHIR\\Flier\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FHIR\\Flier\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FHIR\\Flier\\FlierServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
