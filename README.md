@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="https://packagist.org/packages/fhive/flier"><img src="https://img.shields.io/packagist/v/fhive/flier" alt="Latest Release"></a>
+  <a href="https://github.com/fhiveserver/flier"><img src="https://img.shields.io/github/v/tag/fhiveserver/flier?label=version" alt="Latest Release"></a>
   <img src="https://img.shields.io/badge/PHP-8.5%2B-777BB4" alt="PHP 8.5+">
   <img src="https://img.shields.io/badge/Laravel-12%2B-FF2D20" alt="Laravel 12+">
   <img src="https://img.shields.io/badge/FHIR-R4-0078D4" alt="FHIR R4">
@@ -18,7 +18,7 @@
 >
 > Flier is under active development. The public API is still stabilizing and **should not be used
 > in production** at this time. Breaking changes may occur between releases without prior notice.
-> Follow [fhive-app/flier](https://github.com/fhive-app/flier) for stability updates.
+> Follow [fhiveserver/flier](https://github.com/fhiveserver/flier) for stability updates.
 
 ---
 
@@ -79,6 +79,21 @@ Flier is deliberately scoped. It does not:
 
 ## Installation
 
+Add the Fhive Composer repository to your `composer.json`:
+
+```json
+{
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://composer.fhive.app"
+        }
+    ]
+}
+```
+
+Then install:
+
 ```bash
 composer require fhive/flier
 ```
@@ -113,7 +128,7 @@ Topics covered:
 ### Creating a resource
 
 ```php
-use FHIR\Flier\Flier;
+use FHIVE\Flier\Flier;
 
 $patient = Flier::resource('Patient')
     ->name([['family' => 'Pereira', 'given' => ['Ana']]])
@@ -136,7 +151,7 @@ $updated = Flier::from($existingPatient)
 Flier records every edit as an operation and, when you call `update()` with an HTTP driver, converts them into a [FHIRPath Patch](https://hl7.org/fhir/http.html#patch) automatically. You never write the `Parameters` resource by hand.
 
 ```php
-use FHIR\Flier\Drivers\FHIRHttpDriver;
+use FHIVE\Flier\Drivers\FHIRHttpDriver;
 
 $driver = new FHIRHttpDriver('https://hapi.fhir.org/baseR4');
 
@@ -177,8 +192,8 @@ $observations = $builders
 ### Writing a custom driver
 
 ```php
-use FHIR\Flier\Builder\Operations\Operation;
-use FHIR\Flier\Drivers\ResourceDriver;
+use FHIVE\Flier\Builder\Operations\Operation;
+use FHIVE\Flier\Drivers\ResourceDriver;
 
 class MyFHIRDriver implements ResourceDriver
 {
@@ -211,11 +226,7 @@ Flier is young. A few things we want to add:
 
 ```bash
 composer test
-# or
-php artisan test --compact modules/flier/tests/
 ```
-
-Feature tests for search indexing require PostgreSQL. Everything else runs on SQLite in-memory.
 
 ---
 
