@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use FHIR\Flier\Contracts\FHIRSearchParameter;
+use FHIVE\Flier\Contracts\FHIRSearchParameter;
 
 it('stores required fields', function (): void {
     $sp = new FHIRSearchParameter(

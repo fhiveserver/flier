@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-use FHIR\Flier\Contracts\FHIRSearchParameter;
-use FHIR\Flier\Contracts\FHIRSearchParameterSource;
-use FHIR\Flier\Sources\CompositeSearchParameterSource;
-use FHIR\Flier\Sources\InMemorySearchParameterSource;
+use FHIVE\Flier\Contracts\FHIRSearchParameter;
+use FHIVE\Flier\Contracts\FHIRSearchParameterSource;
+use FHIVE\Flier\Sources\CompositeSearchParameterSource;
+use FHIVE\Flier\Sources\InMemorySearchParameterSource;
 
 it('implements FHIRSearchParameterSource interface', function (): void {
     $composite = new CompositeSearchParameterSource;

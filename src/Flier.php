@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace FHIR\Flier;
+namespace FHIVE\Flier;
 
-use FHIR\Flier\Builder\ResourceBuilder;
-use FHIR\Flier\Builder\SearchBuilder;
-use FHIR\Flier\Contracts\FHIRSearchParameterSource;
-use FHIR\Flier\Sources\CompositeSearchParameterSource;
+use FHIVE\Flier\Builder\ResourceBuilder;
+use FHIVE\Flier\Builder\SearchBuilder;
+use FHIVE\Flier\Contracts\FHIRSearchParameterSource;
+use FHIVE\Flier\Sources\CompositeSearchParameterSource;
 use Illuminate\Support\Collection;
 use InvalidArgumentException;
 

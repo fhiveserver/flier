@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace FHIR\Flier\Builder;
+namespace FHIVE\Flier\Builder;
 
-use FHIR\Flier\Drivers\SearchDriver;
+use FHIVE\Flier\Drivers\SearchDriver;
 use Illuminate\Support\Traits\Macroable;
 
 /**

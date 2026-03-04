@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace FHIR\Flier\Builder;
+namespace FHIVE\Flier\Builder;
 
 /**
  * Parâmetro de busca FHIR parsed a partir da query string HTTP ou do builder fluente.

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace FHIR\Flier\Drivers;
+namespace FHIVE\Flier\Drivers;
 
-use FHIR\Flier\Builder\SearchParam;
+use FHIVE\Flier\Builder\SearchParam;
 
 /**
  * Contrato para drivers de busca FHIR.

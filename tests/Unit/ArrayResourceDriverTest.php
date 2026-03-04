@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-use FHIR\Flier\Builder\Operations\AddOperation;
-use FHIR\Flier\Builder\Operations\DeleteOperation;
-use FHIR\Flier\Builder\Operations\ReplaceOperation;
-use FHIR\Flier\Drivers\ArrayResourceDriver;
+use FHIVE\Flier\Builder\Operations\AddOperation;
+use FHIVE\Flier\Builder\Operations\DeleteOperation;
+use FHIVE\Flier\Builder\Operations\ReplaceOperation;
+use FHIVE\Flier\Drivers\ArrayResourceDriver;
 
 beforeEach(function (): void {
     $this->driver = new ArrayResourceDriver;

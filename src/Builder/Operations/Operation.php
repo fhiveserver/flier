@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace FHIR\Flier\Builder\Operations;
+namespace FHIVE\Flier\Builder\Operations;
 
 /**
  * Representa uma operação pendente sobre um recurso FHIR.

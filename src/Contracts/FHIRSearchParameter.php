@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace FHIR\Flier\Contracts;
+namespace FHIVE\Flier\Contracts;
 
 /**
  * Representa um FHIR SearchParameter de forma imutável, sem acoplamento ao banco de dados.

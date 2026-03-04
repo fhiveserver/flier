@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace FHIR\Flier\Drivers;
+namespace FHIVE\Flier\Drivers;
 
-use FHIR\Flier\Builder\SearchParam;
-use FHIR\Flier\Patch\FHIRPathPatchDriver;
+use FHIVE\Flier\Builder\SearchParam;
+use FHIVE\Flier\Patch\FHIRPathPatchDriver;
 use Illuminate\Http\Client\PendingRequest;
 use Illuminate\Support\Facades\Http;
 use InvalidArgumentException;

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace FHIR\Flier;
+namespace FHIVE\Flier;
 
-use FHIR\Flier\Contracts\FHIRSearchParameterSource;
-use FHIR\Flier\Patch\FHIRPathPatchDriver;
-use FHIR\Flier\Sources\CompositeSearchParameterSource;
+use FHIVE\Flier\Contracts\FHIRSearchParameterSource;
+use FHIVE\Flier\Patch\FHIRPathPatchDriver;
+use FHIVE\Flier\Sources\CompositeSearchParameterSource;
 use Illuminate\Support\ServiceProvider;
 
 /**

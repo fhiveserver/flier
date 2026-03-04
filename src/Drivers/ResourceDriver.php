@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace FHIR\Flier\Drivers;
+namespace FHIVE\Flier\Drivers;
 
-use FHIR\Flier\Builder\Operations\Operation;
+use FHIVE\Flier\Builder\Operations\Operation;
 
 /**
  * Contrato para drivers de operações em recursos FHIR.

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-use FHIR\Flier\Builder\Operations\AddOperation;
-use FHIR\Flier\Builder\SearchParam;
-use FHIR\Flier\Drivers\FHIRHttpDriver;
-use FHIR\Flier\Drivers\ResourceDriver;
-use FHIR\Flier\Drivers\SearchDriver;
+use FHIVE\Flier\Builder\Operations\AddOperation;
+use FHIVE\Flier\Builder\SearchParam;
+use FHIVE\Flier\Drivers\FHIRHttpDriver;
+use FHIVE\Flier\Drivers\ResourceDriver;
+use FHIVE\Flier\Drivers\SearchDriver;
 use Illuminate\Support\Facades\Http;
 
 beforeEach(function (): void {

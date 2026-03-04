@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use FHIR\Flier\Builder\Operations\AddOperation;
-use FHIR\Flier\Builder\Operations\Operation;
+use FHIVE\Flier\Builder\Operations\AddOperation;
+use FHIVE\Flier\Builder\Operations\Operation;
 
 it('implements Operation interface', function (): void {
     $op = new AddOperation('gender', 'male');

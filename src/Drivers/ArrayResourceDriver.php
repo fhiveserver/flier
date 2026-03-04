@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace FHIR\Flier\Drivers;
+namespace FHIVE\Flier\Drivers;
 
-use FHIR\Flier\Builder\Operations\AddOperation;
-use FHIR\Flier\Builder\Operations\DeleteOperation;
-use FHIR\Flier\Builder\Operations\Operation;
-use FHIR\Flier\Builder\Operations\ReplaceOperation;
+use FHIVE\Flier\Builder\Operations\AddOperation;
+use FHIVE\Flier\Builder\Operations\DeleteOperation;
+use FHIVE\Flier\Builder\Operations\Operation;
+use FHIVE\Flier\Builder\Operations\ReplaceOperation;
 
 /**
  * Driver em memória que aplica operações sobre arrays PHP — sem persistência.

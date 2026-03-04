@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace FHIR\Flier\Builder;
+namespace FHIVE\Flier\Builder;
 
-use FHIR\Flier\Builder\Operations\DeleteOperation;
-use FHIR\Flier\Builder\Operations\ReplaceOperation;
+use FHIVE\Flier\Builder\Operations\DeleteOperation;
+use FHIVE\Flier\Builder\Operations\ReplaceOperation;
 use Stringable;
 
 /**

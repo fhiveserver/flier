@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-use FHIR\Flier\Builder\Operations\DeleteOperation;
-use FHIR\Flier\Builder\Operations\ReplaceOperation;
-use FHIR\Flier\Builder\PropertyProxy;
-use FHIR\Flier\Builder\ResourceBuilder;
+use FHIVE\Flier\Builder\Operations\DeleteOperation;
+use FHIVE\Flier\Builder\Operations\ReplaceOperation;
+use FHIVE\Flier\Builder\PropertyProxy;
+use FHIVE\Flier\Builder\ResourceBuilder;
 
 it('returns the current value via value()', function (): void {
     $builder = new ResourceBuilder('Patient', ['gender' => 'male']);

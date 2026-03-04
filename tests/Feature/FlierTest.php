@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-use FHIR\Flier\Builder\ResourceBuilder;
-use FHIR\Flier\Builder\SearchBuilder;
-use FHIR\Flier\Flier;
+use FHIVE\Flier\Builder\ResourceBuilder;
+use FHIVE\Flier\Builder\SearchBuilder;
+use FHIVE\Flier\Flier;
 
 // ————————————————————————————————————————————————————————————————
 // Flier::resource()

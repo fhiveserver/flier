@@ -14,18 +14,18 @@
     },
     "autoload": {
         "psr-4": {
-            "FHIR\\Flier\\": "src/"
+            "FHIVE\\Flier\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "FHIR\\Flier\\Tests\\": "tests/"
+            "FHIVE\\Flier\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "FHIR\\Flier\\FlierServiceProvider"
+                "FHIVE\\Flier\\FlierServiceProvider"
             ]
         }
     },

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace FHIR\Flier\Builder\Operations;
+namespace FHIVE\Flier\Builder\Operations;
 
 /**
  * Adiciona (ou define) uma propriedade no recurso FHIR.

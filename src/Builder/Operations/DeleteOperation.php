@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace FHIR\Flier\Builder\Operations;
+namespace FHIVE\Flier\Builder\Operations;
 
 /**
  * Remove uma propriedade do recurso FHIR.

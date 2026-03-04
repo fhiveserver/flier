@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace FHIR\Flier\Builder;
+namespace FHIVE\Flier\Builder;
 
-use FHIR\Flier\Builder\Operations\AddOperation;
-use FHIR\Flier\Builder\Operations\Operation;
-use FHIR\FlierStorage\Contracts\FHIRIndexedResource;
-use FHIR\Flier\Drivers\ArrayResourceDriver;
-use FHIR\Flier\Drivers\ResourceDriver;
-use FHIR\Flier\Indexer\SearchIndexer;
-use FHIR\Flier\Patch\FHIRPathPatchDriver;
+use FHIVE\Flier\Builder\Operations\AddOperation;
+use FHIVE\Flier\Builder\Operations\Operation;
+use FHIVE\FlierStorage\Contracts\FHIRIndexedResource;
+use FHIVE\Flier\Drivers\ArrayResourceDriver;
+use FHIVE\Flier\Drivers\ResourceDriver;
+use FHIVE\Flier\Indexer\SearchIndexer;
+use FHIVE\Flier\Patch\FHIRPathPatchDriver;
 use Illuminate\Support\Traits\Macroable;
 
 /**

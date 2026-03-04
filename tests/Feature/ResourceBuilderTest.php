@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-use FHIR\Flier\Builder\Operations\AddOperation;
-use FHIR\Flier\Builder\Operations\DeleteOperation;
-use FHIR\Flier\Builder\Operations\ReplaceOperation;
-use FHIR\Flier\Builder\PropertyProxy;
-use FHIR\Flier\Builder\ResourceBuilder;
-use FHIR\Flier\Drivers\ArrayResourceDriver;
-use FHIR\Flier\Drivers\ResourceDriver;
+use FHIVE\Flier\Builder\Operations\AddOperation;
+use FHIVE\Flier\Builder\Operations\DeleteOperation;
+use FHIVE\Flier\Builder\Operations\ReplaceOperation;
+use FHIVE\Flier\Builder\PropertyProxy;
+use FHIVE\Flier\Builder\ResourceBuilder;
+use FHIVE\Flier\Drivers\ArrayResourceDriver;
+use FHIVE\Flier\Drivers\ResourceDriver;
 
 // ————————————————————————————————————————————————————————————————
 // Constructor & Accessors

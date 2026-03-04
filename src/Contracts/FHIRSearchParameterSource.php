@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace FHIR\Flier\Contracts;
+namespace FHIVE\Flier\Contracts;
 
 /**
  * Fonte de SearchParameters FHIR para o motor de indexação.

@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace FHIR\Flier\Patch;
+namespace FHIVE\Flier\Patch;
 
-use FHIR\Flier\Builder\Operations\AddOperation;
-use FHIR\Flier\Builder\Operations\DeleteOperation;
-use FHIR\Flier\Builder\Operations\Operation;
-use FHIR\Flier\Builder\Operations\ReplaceOperation;
+use FHIVE\Flier\Builder\Operations\AddOperation;
+use FHIVE\Flier\Builder\Operations\DeleteOperation;
+use FHIVE\Flier\Builder\Operations\Operation;
+use FHIVE\Flier\Builder\Operations\ReplaceOperation;
 
 /**
  * Gera um recurso FHIR Parameters com operações FHIRPath Patch.

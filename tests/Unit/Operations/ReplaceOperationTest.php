@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use FHIR\Flier\Builder\Operations\Operation;
-use FHIR\Flier\Builder\Operations\ReplaceOperation;
+use FHIVE\Flier\Builder\Operations\Operation;
+use FHIVE\Flier\Builder\Operations\ReplaceOperation;
 
 it('implements Operation interface', function (): void {
     $op = new ReplaceOperation('status', 'active');

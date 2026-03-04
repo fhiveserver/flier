@@ -2,38 +2,23 @@
 
 declare(strict_types=1);
 
-namespace FHIR\Flier\Tests;
+namespace FHIVE\Flier\Tests;
 
-use Illuminate\Support\Facades\DB;
-use Tests\TestCase as BaseTestCase;
+use FHIVE\Flier\FlierServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
-abstract class TestCase extends BaseTestCase
+/**
+ * PT: TestCase para o módulo Flier (standalone OSS).
+ *     Usa Orchestra Testbench — pode rodar sem o servidor.
+ *     DB configurado pelo phpunit.xml.
+ * EN: TestCase for the Flier module (standalone OSS).
+ *     Uses Orchestra Testbench — can run without the servidor.
+ *     DB configured by phpunit.xml.
+ */
+abstract class TestCase extends Orchestra
 {
-    protected function setUp(): void
+    protected function getPackageProviders($app): array
     {
-        parent::setUp();
-
-        // Usa vars prefixadas FLIER_DB_* (não sobrescritas pelo phpunit.xml).
-        // Uses FLIER_DB_* prefixed vars (not overridden by phpunit.xml).
-        config([
-            'database.default' => 'pgsql',
-            'database.connections.pgsql' => [
-                'driver' => 'pgsql',
-                'host' => env('FLIER_DB_HOST', env('PGSQL_HOST', '127.0.0.1')),
-                'port' => env('FLIER_DB_PORT', env('PGSQL_PORT', '5432')),
-                'database' => env('FLIER_DB_DATABASE', 'fhive'),
-                'username' => env('FLIER_DB_USERNAME', env('PGSQL_USER', 'root')),
-                'password' => env('FLIER_DB_PASSWORD', env('PGSQL_PASSWORD', '')),
-                'charset' => 'utf8',
-                'prefix' => '',
-                'prefix_indexes' => true,
-                'search_path' => 'public',
-                'sslmode' => 'prefer',
-            ],
-            'projects.enabled' => false,
-        ]);
-
-        DB::purge('pgsql');
-        DB::setDefaultConnection('pgsql');
+        return [FlierServiceProvider::class];
     }
 }

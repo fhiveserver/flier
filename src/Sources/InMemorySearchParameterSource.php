@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace FHIR\Flier\Sources;
+namespace FHIVE\Flier\Sources;
 
-use FHIR\Flier\Contracts\FHIRSearchParameter;
-use FHIR\Flier\Contracts\FHIRSearchParameterSource;
+use FHIVE\Flier\Contracts\FHIRSearchParameter;
+use FHIVE\Flier\Contracts\FHIRSearchParameterSource;
 
 /**
  * Fonte de SearchParameters definida em código — para uso em testes e em recursos hard-coded.

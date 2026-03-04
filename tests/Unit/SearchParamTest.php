@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use FHIR\Flier\Builder\SearchParam;
+use FHIVE\Flier\Builder\SearchParam;
 
 it('stores code and type and rawValue', function (): void {
     $param = new SearchParam(
